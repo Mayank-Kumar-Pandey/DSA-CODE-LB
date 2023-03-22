@@ -16,7 +16,7 @@ int binarySearch(vector<int> &arr, int s, int e , int target){
         return binarySearch(arr,mid+1,e,target);
     }
 }
-int main()
+int main() 
 {
     vector<int>arr{10,20,30,40,65,99};
     int target=99;

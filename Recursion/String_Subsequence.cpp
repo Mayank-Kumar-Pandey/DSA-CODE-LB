@@ -2,7 +2,7 @@
 using namespace std ; 
 void PrintSubsequence(string str, string output ,int i){
 
-    if(i==str.length()){
+    if(i>=str.length()){
         cout<<output<<endl;
         // cout<<output.length()<<endl;
         return;
@@ -12,6 +12,7 @@ void PrintSubsequence(string str, string output ,int i){
 
 
     //include the string
+    //output=output+srt[i];
     output.push_back(str[i]);
 
     PrintSubsequence(str,output,i+1);
